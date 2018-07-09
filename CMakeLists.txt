@@ -22,7 +22,7 @@ endif()
 #---------------------------------------------------------------------------------------
 # spdlog target
 #---------------------------------------------------------------------------------------
-add_library(spdlog INTERFACE)
+add_library(spdlog INTERFACE include/spdlog/details/zhelpers.h)
 
 option(SPDLOG_BUILD_EXAMPLES "Build examples" OFF)
 cmake_dependent_option(SPDLOG_BUILD_TESTING
